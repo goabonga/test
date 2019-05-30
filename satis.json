@@ -1,0 +1,8 @@
+{
+  "name": "test",
+  "homepage": "https://goabonga.com/test/",
+  "repositories": [
+    { "type": "vcs", "url": "https://github.com/goabonga/test" }
+  ],
+  "require-all": false
+}
