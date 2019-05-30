@@ -1,6 +1,6 @@
 {
     "type": "project",
-    "name": "test/skeleton",
+    "name": "goabonga/test",
     "description": "simple skeleton for composer project",
     "license": "proprietary",
     "require": {
