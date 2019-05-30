@@ -1,12 +1,13 @@
 
 language: php
 
-services:
-  - docker
+#services:
+#  - docker
 
 before_install:
 #  - docker pull composer/satis
   - composer create-project composer/satis --stability=dev --keep-vcs
+  - composer config --global github-oauth.github.com $GITHUB_AUTH_TOKEN
 
 script:
 #  - docker run --rm --init -it --user $(id -u):$(id -g) --volume $(pwd):/build --volume "${COMPOSER_HOME:-$HOME/.composer}:/composer" composer/satis build satis.json output
