@@ -6,12 +6,13 @@ before_install:
   - docker pull composer/satis
 
 script:
-  - docker run --rm --init -it --user $(id -u):$(id -g) --volume $(pwd):/build --volume "${COMPOSER_HOME:-$HOME/.composer}:/composer" composer/satis build satis.json ./
+  - docker run --rm --init -it --user $(id -u):$(id -g) --volume $(pwd):/build --volume "${COMPOSER_HOME:-$HOME/.composer}:/composer" composer/satis build satis.json output
 
 deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
   keep_history: true
+  local_dir: output
   on:
     branch: master
