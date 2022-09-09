@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "test"
+version = "0.0.0"
+description = ""
+authors = ["Chris <goabonga@pm.me>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[tool.poetry.group.dev.dependencies]
+commitizen = "^3.30.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.commitizen]
+version = "0.0.0"
+name = "cz_conventional_commits"
+tag_format = "$major.$minor.$patch$prerelease"
+version_files = [
+    "pyproject.toml:version",
+    "helm/test/Chart.yaml:version",
+    "generator/__init__.py",
+]
