@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  test:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-10-30T17:31:05.002773542Z"
+    description: A Helm chart for Kubernetes
+    digest: e4ec276593e9e180c330eddd77dc5e805f3317a0c1ddd9cc0051f85c601070b4
+    name: test
+    type: application
+    urls:
+    - https://github.com/goabonga/test/releases/download/test-0.1.0/test-0.1.0.tgz
+    version: 0.1.0
+generated: "2024-10-30T17:31:05.002780395Z"
